@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin sinh viên</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+        }
+        .content {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        h1 {
+            color: #20D374;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Thông Tin Sinh Viên</h1>
+            <p><strong>Mã sinh viên:</strong> <span th:text="${mssv}"></span></p>
+            <p><strong>Họ và tên:</strong> <span th:text="${name}"></span> </p>
+            <p><strong>Năm sinh:</strong> <span th:text="${yearOb}"></span></p>
+            <p><strong>Giới tính:</strong> <span th:text="${gtinh}"></span>
+    </div>
+</body>
+</html>
