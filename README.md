@@ -16,3 +16,4 @@
 
 - **Đường dẫn:** [About Me](https://github.com/Truongdoxuan/64132775_Web2/tree/main/AboutMe)
 - **Main file:** [AboutMe.java](AboutMe/src/main/java/truongdx/exercise1_3/AboutMe.java)
+  ![Ảnh kết quả](Exercise_images/aboutme.jpg)
