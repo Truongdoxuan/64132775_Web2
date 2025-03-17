@@ -6,8 +6,8 @@
     <title>Thông tin sinh viên</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
             color: #333;
             margin: 0;
             padding: 0;
@@ -16,43 +16,57 @@
             align-items: center;
             height: 100vh;
         }
+        
         .container {
-            background: #fff;
-            padding: 20px 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            display: flex;
-            align-items: center;
+            background: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
         }
-        .content {
-            flex: 1;
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 10px 0;
-        }
+
         h1 {
-            color: #20D374;
+            color: #667eea;
             margin-bottom: 20px;
+            font-size: 30px;
         }
+
         p {
             font-size: 18px;
             line-height: 1.6;
             margin: 10px 0;
+            color: #555;
         }
+
+        strong {
+            color: #764ba2;
+        }
+
         .social-links {
             margin-top: 20px;
         }
+
+        .social-links a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #764ba2;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <h1>Thông Tin Sinh Viên</h1>
-            <p><strong>Mã sinh viên:</strong> <span th:text="${mssv}"></span></p>
-            <p><strong>Họ và tên:</strong> <span th:text="${name}"></span> </p>
-            <p><strong>Năm sinh:</strong> <span th:text="${yearOb}"></span></p>
-            <p><strong>Giới tính:</strong> <span th:text="${gtinh}"></span>
+        <h1>Thông Tin Sinh Viên</h1>
+        <p><strong>Mã sinh viên:</strong> <span th:text="${mssv}"></span></p>
+        <p><strong>Họ và tên:</strong> <span th:text="${name}"></span> </p>
+        <p><strong>Năm sinh:</strong> <span th:text="${yearOb}"></span></p>
+        <p><strong>Giới tính:</strong> <span th:text="${gtinh}"></span></p>
     </div>
 </body>
 </html>

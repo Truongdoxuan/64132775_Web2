@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller 
 public class TruyenDuLieuController {
-	@GetMapping("/studentInfo")
+	@GetMapping("/studentProfile")
 	public String studentInfo(ModelMap model) {
 		model.addAttribute("mssv", "64132775");
 		model.addAttribute("name","Đỗ Xuân Trường");
