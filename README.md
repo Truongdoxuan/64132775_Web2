@@ -4,7 +4,7 @@
 - Email: truong.dx.64cntt@ntu.edu.vn
 
 ## Danh mục các bài tập
-1. [Bài tập 1: About Me](https://github.com/Truongdoxuan/64132775_Web2/tree/main/AboutMe)
+1. [Bài tập 1: About Me](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-1-about-me---gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-t%C3%B4i)
 2. [Bài tập 2: BMI](https://github.com/Truongdoxuan/64132775_Web2/tree/main/BMI)
 3. [Bài tập 3: Login](https://github.com/Truongdoxuan/64132775_Web2/tree/main/Login)
 4. [Bài tập 4: Login - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main/SB_TruyenDuLieuSangView)
