@@ -4,11 +4,11 @@
 - Email: truong.dx.64cntt@ntu.edu.vn
 
 ## Danh mục các bài tập
-1. [Bài tập 1: About Me](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-1-about-me---gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-t%C3%B4i)
-2. [Bài tập 2: BMI](https://github.com/Truongdoxuan/64132775_Web2/tree/main/BMI)
-3. [Bài tập 3: Login](https://github.com/Truongdoxuan/64132775_Web2/tree/main/Login)
-4. [Bài tập 4: Login - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main/SB_TruyenDuLieuSangView)
-5. [Bài tập 5: BMI - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main/SB_BMI)
+1. [Bài tập 1: About Me](https://github.com/Truongdoxuan/64132775_Web2?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-1-about-me---gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-t%C3%B4i)
+2. [Bài tập 2: BMI](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-2-bmi---t%C3%ADnh-ch%E1%BB%89-s%E1%BB%91-bmi-c%C6%A1-th%E1%BB%83)
+3. [Bài tập 3: Login](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-3-login---%C4%91%C4%83ng-nh%E1%BA%ADp-v%C3%A0-hi%E1%BB%83n-th%E1%BB%8B-profile-c%C3%A1-nh%C3%A2n)
+4. [Bài tập 4: Login - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-4-login---truy%E1%BB%81n-d%E1%BB%AF-li%E1%BB%87u-sang-view-string-boot)
+5. [Bài tập 5: BMI - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-5-bmi---truy%E1%BB%81n-d%E1%BB%AF-li%E1%BB%87u-sang-view-string-boot)
    
 ## Bài tập 1: About Me - Giới thiệu về tôi
 
