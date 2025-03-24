@@ -4,12 +4,12 @@
 - Email: truong.dx.64cntt@ntu.edu.vn
 
 ## Danh mục các bài tập
-1. [Bài tập 1: About Me](https://github.com/Truongdoxuan/64132775_Web2/tree/main/AboutMe)
-2. [Bài tập 2: BMI](https://github.com/Truongdoxuan/64132775_Web2/tree/main/BMI)
-3. [Bài tập 3: Tính toán](https://github.com/Truongdoxuan/64132775_Web2/tree/main/Example_TinhToan)
-4. [Bài tập 4: Login](https://github.com/Truongdoxuan/64132775_Web2/tree/main/Login)
-5. [Bài tập 5: Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main/SB_TruyenDuLieuSangView)
-
+1. [Bài tập 1: About Me](https://github.com/Truongdoxuan/64132775_Web2?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-1-about-me---gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-t%C3%B4i)
+2. [Bài tập 2: BMI](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-2-bmi---t%C3%ADnh-ch%E1%BB%89-s%E1%BB%91-bmi-c%C6%A1-th%E1%BB%83)
+3. [Bài tập 3: Login](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-3-login---%C4%91%C4%83ng-nh%E1%BA%ADp-v%C3%A0-hi%E1%BB%83n-th%E1%BB%8B-profile-c%C3%A1-nh%C3%A2n)
+4. [Bài tập 4: Login - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-4-login---truy%E1%BB%81n-d%E1%BB%AF-li%E1%BB%87u-sang-view-string-boot)
+5. [Bài tập 5: BMI - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-5-bmi---truy%E1%BB%81n-d%E1%BB%AF-li%E1%BB%87u-sang-view-string-boot)
+   
 ## Bài tập 1: About Me - Giới thiệu về tôi
 
 **Mô tả:** Xây dựng servlet AboutMe, thực hiện yêu cầu khi client gửi GET request http://localhost/AboutMe và sau đó Servlet gửi đáp ứng các thông tin cá nhân của mình.
@@ -41,6 +41,38 @@
 
 ![image](https://github.com/user-attachments/assets/62d57523-e0cf-43c7-ac64-9db4d0c17c3c)
 ![image](https://github.com/user-attachments/assets/6ea176b0-17d0-48d0-9aad-cc9a41dd4c60)
+
+## Bài tập 4: Login - Truyền dữ liệu sang View (String Boot)
+**Mô tả:** 
+
+a ) Tạo dự án String Boot, truyền dữ liệu: MSSV, Họ tên SV, năm sinh, giới tính từ Controller -> View và hiển thị tại View.
+
+b) Tạo 1 model sinh viên và thiết kế dữ liệu danh sách sinh viên và truyền đến View để hiển thị. 
+
+c)  Thiết kế View Login truyền dữ liệu đã nhập vào để đăng nhập. Nếu đăng nhập thành công thì chuyển hướng đến View Profile.
+
+- **Đường dẫn:** [SB_TruyenDuLieuSangView](SB_TruyenDuLieuSangView)
+- **Main file:**
+  + [TruyenDuLieuController.java](SB_TruyenDuLieuSangView/src/main/java/truongdx/baitap/SB_TruyenDuLieuSangView/TruyenDuLieuController.java)
+  + [Model_SinhVien.java](SB_TruyenDuLieuSangView/src/main/java/truongdx/baitap/SB_TruyenDuLieuSangView/SinhVien.java)
+  + [LoginController.java](SB_TruyenDuLieuSangView/src/main/java/truongdx/baitap/SB_TruyenDuLieuSangView/LoginController.java)
+  + [StudentProfile.html](SB_TruyenDuLieuSangView/src/main/resources/templates/studentView.html)
+  + [dsSinhVienView.html](SB_TruyenDuLieuSangView/src/main/resources/templates/dsSinhVienView.html)
+  + [LoginView.html](SB_TruyenDuLieuSangView/src/main/resources/templates/login.html)
+
+![image](https://github.com/user-attachments/assets/bd5493dd-5152-4823-b5e9-33c498cf62cb)
+![image](https://github.com/user-attachments/assets/e2553727-e6fa-4821-9cd9-386316a1e1bc)
+
+## Bài tập 5: BMI - Truyền dữ liệu sang View (String Boot)
+**Mô tả:** Tạo dự án String Boot, truyền dữ liệu: chiều cao, cân nặng từ Controller -> View và hiển thị kết quả chỉ số BMI của bạn tại View.
+- **Đường dẫn:** [SB_BMI](SB_BMI)
+- **Main file:**
+  + [BMI_Controller.java](SB_BMI/src/main/java/truongdx/baitap/SB_BMI/BMI_Controller.java)
+  + [BMI_Form.html](SB_BMI/src/main/resources/templates/bmi.html)
+  + [BMI_Result](SB_BMI/src/main/resources/templates/result.html)
+
+  ![image](https://github.com/user-attachments/assets/7d4d1729-6fdf-4d7c-9688-d0de37b7a092)
+  ![image](https://github.com/user-attachments/assets/a5cca0f7-76f5-4b6b-bbd5-1884f9693da7)
 
 
 
