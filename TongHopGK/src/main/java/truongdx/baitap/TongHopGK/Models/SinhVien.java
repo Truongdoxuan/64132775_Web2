@@ -3,9 +3,9 @@ package truongdx.baitap.TongHopGK.Models;
 public class SinhVien {
 	private String mssv;
     private String hotensv;
-    private Float diemTB;
+    private Double diemTB;
 	
-    public SinhVien(String mssv, String hotensv, Float diemTB) {
+    public SinhVien(String mssv, String hotensv, Double diemTB) {
 		super();
 		this.mssv = mssv;
 		this.hotensv = hotensv;
@@ -28,11 +28,11 @@ public class SinhVien {
 		this.hotensv = hotensv;
 	}
 
-	public Float getDiemTB() {
+	public Double getDiemTB() {
 		return diemTB;
 	}
 
-	public void setDiemTB(Float diemTB) {
+	public void setDiemTB(Double diemTB) {
 		this.diemTB = diemTB;
 	}
 	  
