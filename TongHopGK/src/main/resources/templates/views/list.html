@@ -1,0 +1,19 @@
+<div th:fragment="content" class="student-list">
+    <h2>Danh sách Sinh Viên</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>MSSV</th>
+                <th>Họ và tên</th>
+                <th>Điểm</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="sv : ${dssv}">
+                <td th:text="${sv.mssv}"></td>
+                <td th:text="${sv.hotensv}"></td>
+                <td th:text="${sv.diemTB}"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

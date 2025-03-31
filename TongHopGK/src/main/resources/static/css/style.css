@@ -1,0 +1,167 @@
+/* Định dạng chung */
+/*header {
+    text-align: center;
+    padding: 10px;
+    background-color: #195891;
+    color: white;
+} */
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #003564;
+}
+
+.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #0E518D;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f1f1f1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*About me */
+.student-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 450px; /* Thu nhỏ phần container */
+    margin: 20px auto;
+}
+
+.info {
+    flex: 1;
+    padding-right: 15px; /* Giảm khoảng cách giữa thông tin và ảnh */
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 20px;
+    color: #555;
+    margin: 6px 0; /* Giảm khoảng cách giữa các dòng */
+}
+
+strong {
+    color: #34495e;
+}
+
+.avatar img {
+    width: 150px; /* Giảm kích thước ảnh */
+    height: 200px;
+    border-radius: 8px;
+    border: 2px solid #3498db;
+    object-fit: cover;
+}
+
+/* Student list*/
+.student-list {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #0D4E8A;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tr:hover {
+    background: #dfe6e9;
+}
+
+td {
+    color: #34495e;
+}
+
