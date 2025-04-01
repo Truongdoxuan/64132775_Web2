@@ -1,13 +1,12 @@
 package thiGK.ntu64132775.DoXuanTruong_ThiGK.Models;
 
 public class Topic {
-	private String id;
+	private int id;
 	private String topicName;
 	private String topicDescription;
-	private String supervisorID;
+	private int supervisorID;
 	private String topicType;
-	
-	public Topic(String id, String topicName, String topicDescription, String supervisorID, String topicType) {
+	public Topic(int id, String topicName, String topicDescription, int supervisorID, String topicType) {
 		super();
 		this.id = id;
 		this.topicName = topicName;
@@ -16,3 +15,5 @@ public class Topic {
 		this.topicType = topicType;
 	}
 }
+	
+	
