@@ -1,0 +1,20 @@
+<div>
+    <h2>Student List</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Supervisor ID</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="student : ${students}">
+            <td th:text="${student.id}"></td>
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.supervisorId}"></td>
+            <td>
+                <a th:href="@{/student/view/{id}(id=${student.id})}">View</a> |
+                <a th:href="@{/student/delete/{id}(id=${student.id})}">Delete</a>
+            </td>
+        </tr>
+    </table>
+</div>

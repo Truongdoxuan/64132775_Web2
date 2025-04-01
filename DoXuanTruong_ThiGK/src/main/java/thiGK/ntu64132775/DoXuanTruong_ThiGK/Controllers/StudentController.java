@@ -11,23 +11,24 @@ import java.util.List;
 @Controller
 @RequestMapping("/student")
 public class StudentController {
-    private List<Student> students = new ArrayList<>();
-
-    public StudentController() {
-        students.add(new Student(1L, "Nguyen Van A", 101L));
-        students.add(new Student(2L, "Tran Thi B", 102L));
-    }
+    private final List<Student> students = new ArrayList<>();
 
     @GetMapping("/list")
     public String listStudents(Model model) {
+        if (students.isEmpty()) {
+            students.add(new Student(1L, "Nguyen Van A", 101L));
+            students.add(new Student(2L, "Tran Thi B", 102L));
+        }
         model.addAttribute("students", students);
-        return "student-list";
+        model.addAttribute("content", "views/student-list");
+        return "layout";
     }
 
     @GetMapping("/new")
     public String newStudentForm(Model model) {
         model.addAttribute("student", new Student(0L, "", 0L));
-        return "student-form";
+        model.addAttribute("content", "views/student-add");
+        return "layout";
     }
 
     @PostMapping("/add")
@@ -36,5 +37,11 @@ public class StudentController {
         students.add(student);
         return "redirect:/student/list";
     }
-}
 
+    @GetMapping("/view/{id}")
+    public String viewStudent(@PathVariable Long id, Model model) {
+        students.stream().filter(s -> s.getId().equals(id)).findFirst().ifPresent(s -> model.addAttribute("student", s));
+        model.addAttribute("content", "views/student-view");
+        return "layout";
+    }
+}
