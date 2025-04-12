@@ -9,7 +9,7 @@
 3. [Bài tập 3: Login](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-3-login---%C4%91%C4%83ng-nh%E1%BA%ADp-v%C3%A0-hi%E1%BB%83n-th%E1%BB%8B-profile-c%C3%A1-nh%C3%A2n)
 4. [Bài tập 4: Login - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-4-login---truy%E1%BB%81n-d%E1%BB%AF-li%E1%BB%87u-sang-view-string-boot)
 5. [Bài tập 5: BMI - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-5-bmi---truy%E1%BB%81n-d%E1%BB%AF-li%E1%BB%87u-sang-view-string-boot)
-6. [Bài tập 6: Tổng hợp ôn tậptập giữa kỳ (Spring Boot)](https://github.com/Truongdoxuan/64132775_Web2?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-6-%C3%B4n-t%E1%BA%ADp-gi%E1%BB%AFa-k%E1%BB%B3-spring-boot)
+6. [Bài tập 6: Tổng hợp ôn tập giữa kỳ (Spring Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-6-t%E1%BB%95ng-h%E1%BB%A3p-%C3%B4n-t%E1%BA%ADp-gi%E1%BB%AFa-k%E1%BB%B3-spring-boot)
    
 ## Bài tập 1: About Me - Giới thiệu về tôi
 
