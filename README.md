@@ -79,7 +79,7 @@ c)  Thiết kế View Login truyền dữ liệu đã nhập vào để đăng n
 **Mô tả:** Tạo dự án String Boot, xây dựng Model, Controller truyền dữ liệu nhiều thông tin sinh viên sang View và xây dựng form thêm thông tin sinh viên truyền thông tin từ View ngược về Controller: Thiết kế View để hiển thị kết quả dưới dạng danh sách.
 - **Đường dẫn:** [TongHopGK](TongHopGK)
 - **Main file:**
-  + [Controller.java](TongHopGK/src/main/java/truongdx/baitap/TongHopGK/Controllers)
+  + [Controller.java](TongHopGK/src/main/java/truongdx/baitap/TongHopGK/Controllers/HomeController.java)
   + [SinhVien.java](TongHopGK/src/main/java/truongdx/baitap/TongHopGK/Models/SinhVien.java)
   + [about.html](TongHopGK/src/main/resources/templates/views/about.html)
   + [addnew.html](TongHopGK/src/main/resources/templates/views/addnew.html)
