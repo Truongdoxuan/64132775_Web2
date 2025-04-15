@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thêm Topic</title>
+    <link rel="stylesheet" href="/css/styles.css"> 
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="container">
+            <form th:action="@{/topic/addnew}" th:object="${topic}" method="post" class="form-container">
+                <h2>Thêm Topic</h2>
+                <label>ID:</label>
+                <input type="text" th:field="*{id}" required />
+
+                <label>Name:</label>
+                <input type="text" th:field="*{topicName}" required />
+
+                <label>Description:</label>
+                <input type="text" step="0.1" th:field="*{topicDescription}" required />
+                
+                <label>supervisorID:</label>
+                <input type="text" step="0.1" th:field="*{supervisorld}" required />
+                
+                <label>Topic Type:</label>
+                <input type="text" step="0.1" th:field="*{topicType}" required />
+
+                <button type="submit">Thêm Topic</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+/* Khung chính */
+
+/* Căn giữa form nhập sinh viên */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+	text-align: center;
+	font-style: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form nhập */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #4DA5DF;
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background: #4DA5DF;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #003564;
+}
+
+/* Bảng hiển thị danh sách */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #4CAF50;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+</style>

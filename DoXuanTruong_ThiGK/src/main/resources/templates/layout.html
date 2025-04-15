@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">My Application</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Menu dọc bên trái -->
+        <div th:replace="~{fragments/sidebar :: sidebar}"></div>
+
+        <!-- Phần chính bên phải -->
+        <div class="main">
+            <!-- Header -->
+            <div th:replace="~{fragments/header :: header}"></div>
+
+            <!-- Nội dung động -->
+            <div class="content">
+                <div th:replace="${content}"></div>
+            </div>
+
+            <!-- Footer -->
+            <div th:replace="~{fragments/footer :: footer}"></div>
+        </div>
+    </div>
+</body>
+</html>

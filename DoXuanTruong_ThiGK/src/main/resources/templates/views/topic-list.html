@@ -1,0 +1,29 @@
+<div th:fragment="content" class="topic-list">
+    <h2>Danh sách Topic</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Supervisor ID</th>
+                <th>Type</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="topic : ${dstp}">
+                <td th:text="${topic.id}"></td>
+                <td th:text="${topic.topicName}"></td>
+                <td th:text="${topic.topicDescription}"></td>
+                <td th:text="${topic.supervisorld}"></td>
+                <td th:text="${topic.topicType}"></td>             
+                <td>
+                    <a th:href="@{'/view/' + ${topic.id}}" class="btn btn-view">View</a>
+                    <a th:href="@{'/edit/' + ${topic.id}}" class="btn btn-edit">Edit</a>
+                    <a th:href="@{'/delete/' + ${topic.id}}" class="btn btn-delete" onclick="return confirm('Bạn có chắc muốn xoá?')">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,22 +1,38 @@
 package thiGK.ntu64132775.DoXuanTruong_ThiGK.Models;
 
 public class Student {
-    private Long id;
+    private String id;
     private String name;
-    private Long supervisorId;
+    private String groupId;
+	
+    public Student(String id, String name, String groupId) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.groupId = groupId;
+	}
 
-    public Student(Long id, String name, Long supervisorId) {
-        this.id = id;
-        this.name = name;
-        this.supervisorId = supervisorId;
-    }
+	public String getId() {
+		return id;
+	}
 
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+	public void setId(String id) {
+		this.id = id;
+	}
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+	public String getName() {
+		return name;
+	}
 
-    public Long getSupervisorId() { return supervisorId; }
-    public void setSupervisorId(Long supervisorId) { this.supervisorId = supervisorId; }
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getGroupId() {
+		return groupId;
+	}
+
+	public void setGroupId(String groupId) {
+		this.groupId = groupId;
+	}
 }

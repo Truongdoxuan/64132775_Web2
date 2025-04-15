@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thêm Sinh Viên</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <div class="container">
+            <form th:action="@{/student/addnew}" th:object="${student}" method="post" class="form-container">
+            <h2>Thêm Sinh Viên</h2>
+                <label>ID:</label>
+                <input type="text" th:field="*{id}" required />
+
+                <label>Họ và tên:</label>	
+                <input type="text" th:field="*{name}" required />
+
+                <label>Mã nhóm:</label>
+                <input type="text" step="0.1" th:field="*{groupId}" required />
+
+                <button type="submit">Thêm Sinh Viên</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+	text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #4DA5DF;
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background: #4DA5DF;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #003564;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #4CAF50;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+</style>
