@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin sinh viên</title>
+</head>
+<body>
+    <div th:fragment="content" class="student-info">
+        <div class="info">
+            <h2>STUDENT INFO</h2>
+            <p>ID: <span th:text="${student.id}"></span></p>
+            <p>Name: <span th:text="${student.name}"></span></p>
+            <p>Group ID: <span th:text="${student.groupId}"></span></p>
+        </div>
+        <div class="avatar">
+            <img th:src="@{/img/avt-exam.png}" alt="anhsv">
+        </div>
+    </div>
+
+</body>
+</html>
+
+<style>
+  .info p {
+      color: #EFF474;
+      font-weight: bold;
+  }
+
+  .info p span {
+      color: white;
+      font-weight: normal;
+  }
+</style>

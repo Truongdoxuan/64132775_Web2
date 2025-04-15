@@ -42,14 +42,14 @@ public class StudentController {
     @PostMapping("/new")
     public String addStudent(@ModelAttribute Student student, ModelMap model) {
         if (student.getId() == null || student.getId().trim().isEmpty() ||
-        	student.getName() == null || student.getName().trim().isEmpty() ||
-        	student.getGroupId() == null || student.getGroupId().trim().isEmpty()) {
-        	model.addAttribute("error", "Vui lòng nhập đầy đủ thông tin !");
-        	model.addAttribute("content", "addnew");
-        	return "layout";
+            student.getName() == null || student.getName().trim().isEmpty() ||
+            student.getGroupId() == null || student.getGroupId().trim().isEmpty()) {
+            model.addAttribute("error", "Vui lòng nhập đầy đủ thông tin !");
+            model.addAttribute("content", "views/student/addSV");
+            return "layout";
         }
         dsSV.add(student);
-        return "redirect:/student/listSV";
+        return "redirect:/student/all";
     }
     
     @GetMapping("/view/{id}")
@@ -62,10 +62,10 @@ public class StudentController {
         model.addAttribute("content", "views/student/viewSV");
         return "layout"; 
     }
-
+    
     @GetMapping("/delete/{id}")
     public String deleteStudent(@PathVariable String id) {
-        dsSV.removeIf(s -> s.getId().equals(id));
-        return "redirect:/student/listSV";
+        dsSV.removeIf(s -> s.getId().equals(id)); 
+        return "redirect:/student/all"; 
     }
 }

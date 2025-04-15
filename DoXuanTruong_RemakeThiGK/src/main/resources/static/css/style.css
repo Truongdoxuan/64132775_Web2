@@ -1,4 +1,4 @@
-/* Định dạng chung */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body, html {
     height: 523px;
 }
 
-/* Sidebar */
 .sidebar {
     position: fixed;
     top: 0;
@@ -88,11 +87,10 @@ header h3 {
     flex: 1;
     width: 1311px;
     padding: 20px;
-    background-color: white;
+    background-color: White;
     box-sizing: border-box;
 }
 
-/* Footer */
 footer {
     position: fixed;
     bottom: 0;
@@ -105,23 +103,27 @@ footer {
 }
 
 
-/*About me */
 .student-info {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: #f9f9f9;
+    background: #0d4e8a;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 450px; /* Thu nhỏ phần container */
+    max-width: 450px;
     margin: 20px auto;
 }
 
 .info {
     flex: 1;
-    padding-right: 15px; /* Giảm khoảng cách giữa thông tin và ảnh */
+    padding-right: 15px;
 }
+
+.info h2 {
+	color: White !important;
+}
+
 
 h2 {
     color: #2c3e50;
@@ -133,7 +135,7 @@ h2 {
 p {
     font-size: 20px;
     color: White;
-    margin: 6px 0; /* Giảm khoảng cách giữa các dòng */
+    margin: 6px 0;
 }
 
 strong {
@@ -141,14 +143,13 @@ strong {
 }
 
 .avatar img {
-    width: 150px; /* Giảm kích thước ảnh */
+    width: 150px;
     height: 200px;
     border-radius: 8px;
     border: 2px solid #3498db;
     object-fit: cover;
 }
 
-/* Student list*/
 
 h2 {
     color: #2c3e50;
@@ -188,7 +189,6 @@ td {
     color: #34495e;
 }
 
-/*list button */
 .btn {
     padding: 4px 10px;
     margin: 0 2px;
@@ -226,4 +226,5 @@ td {
     background-color: #e53935;
     transform: scale(1.05);
 }
+
 

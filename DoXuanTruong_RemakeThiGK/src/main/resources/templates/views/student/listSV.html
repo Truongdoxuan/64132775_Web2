@@ -1,0 +1,26 @@
+<div th:fragment="content" class="student-list">
+    <h2>Danh sách Sinh Viên</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Group ID</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="student : ${dssv}">
+                <td th:text="${student.id}"></td>
+                <td th:text="${student.name}"></td>
+                <td th:text="${student.groupId}"></td>
+                <td>
+                    <a th:href="@{/student/view/{id}(id=${student.id})}" class="btn btn-view">View</a> 
+                    <a class="btn btn-edit">Edit</a>
+                    <a th:href="@{/student/delete/{id}(id=*{student.id})}" class="btn btn-delete" onclick="return confirm('Bạn có chắc muốn xoá?')">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
