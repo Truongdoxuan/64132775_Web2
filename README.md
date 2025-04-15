@@ -97,7 +97,7 @@ c)  Thiết kế View Login truyền dữ liệu đã nhập vào để đăng n
 - **Main file:**
    + [StudentController.java](DoXuanTruong_RemakeThiGK/src/main/java/thiGK/ntu64132775/DoXuanTruong_RemakeThiGK/Controllers/StudentController.java)
    + [TopicController.java](DoXuanTruong_RemakeThiGK/src/main/java/thiGK/ntu64132775/DoXuanTruong_RemakeThiGK/Controllers/TopicController.java)
-   + [Vỉews](DoXuanTruong_RemakeThiGK/src/main/resources/templates/views)
+   + [Views](DoXuanTruong_RemakeThiGK/src/main/resources/templates/views)
    + [CSS](DoXuanTruong_RemakeThiGK/src/main/resources/static/css)
 ![image](https://github.com/user-attachments/assets/caedd6be-2b13-4fcf-aad4-2218839a3835)
 ![image](https://github.com/user-attachments/assets/bfbf4c15-50b0-4ef3-8002-59edd78b97b1)
