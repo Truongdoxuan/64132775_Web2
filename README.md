@@ -9,6 +9,7 @@
 3. [Bài tập 3: Login](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-3-login---%C4%91%C4%83ng-nh%E1%BA%ADp-v%C3%A0-hi%E1%BB%83n-th%E1%BB%8B-profile-c%C3%A1-nh%C3%A2n)
 4. [Bài tập 4: Login - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-4-login---truy%E1%BB%81n-d%E1%BB%AF-li%E1%BB%87u-sang-view-string-boot)
 5. [Bài tập 5: BMI - Truyền dữ liệu sang View (String Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-5-bmi---truy%E1%BB%81n-d%E1%BB%AF-li%E1%BB%87u-sang-view-string-boot)
+6. [Bài tập 6: Tổng hợp ôn tập giữa kỳ (Spring Boot)](https://github.com/Truongdoxuan/64132775_Web2/tree/main?tab=readme-ov-file#b%C3%A0i-t%E1%BA%ADp-6-t%E1%BB%95ng-h%E1%BB%A3p-%C3%B4n-t%E1%BA%ADp-gi%E1%BB%AFa-k%E1%BB%B3-spring-boot)
    
 ## Bài tập 1: About Me - Giới thiệu về tôi
 
@@ -73,6 +74,21 @@ c)  Thiết kế View Login truyền dữ liệu đã nhập vào để đăng n
 
   ![image](https://github.com/user-attachments/assets/7d4d1729-6fdf-4d7c-9688-d0de37b7a092)
   ![image](https://github.com/user-attachments/assets/a5cca0f7-76f5-4b6b-bbd5-1884f9693da7)
+
+## Bài tập 6: Tổng hợp ôn tập giữa kỳ (Spring Boot)
+**Mô tả:** Tạo dự án String Boot, xây dựng Model, Controller truyền dữ liệu nhiều thông tin sinh viên sang View và xây dựng form thêm thông tin sinh viên truyền thông tin từ View ngược về Controller: Thiết kế View để hiển thị kết quả dưới dạng danh sách.
+- **Đường dẫn:** [TongHopGK](TongHopGK)
+- **Main file:**
+  + [Controller.java](TongHopGK/src/main/java/truongdx/baitap/TongHopGK/Controllers/HomeController.java)
+  + [SinhVien.java](TongHopGK/src/main/java/truongdx/baitap/TongHopGK/Models/SinhVien.java)
+  + [about.html](TongHopGK/src/main/resources/templates/views/about.html)
+  + [addnew.html](TongHopGK/src/main/resources/templates/views/addnew.html)
+  + [home.html](TongHopGK/src/main/resources/templates/views/home.html)
+  + [list.html](TongHopGK/src/main/resources/templates/views/list.html)
+
+![image](https://github.com/user-attachments/assets/45076115-60ca-475c-8c5e-a559a97a10d9)
+![image](https://github.com/user-attachments/assets/c90b070d-15d3-4643-9d2d-4c45fa4abf9b)
+![image](https://github.com/user-attachments/assets/af491d71-44df-4119-89c7-7e246fdc3a96)
 
 
 
