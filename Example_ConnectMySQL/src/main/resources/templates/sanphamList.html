@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách sản phẩm</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<h2>Danh sách sản phẩm</h2>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Tên sản phẩm</th>
+        <th>Giá</th>
+        <th>Mô tả</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="sanpham : ${sp}">
+        <td th:text="${sanpham.id}"></td>
+        <td th:text="${sanpham.tensp}"></td>
+        <td th:text="${sanpham.giasp}"></td>
+        <td th:text="${sanpham.mota}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
